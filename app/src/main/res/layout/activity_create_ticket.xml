@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.CreateTicket">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Subject"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subj"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/light_blue"
+            android:hint="Enter Subject"
+            android:inputType="textCapWords"
+            android:paddingBottom="20dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/Region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Region"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Region"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/light_blue"
+            android:gravity="center"
+            android:hint="Select Region"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_des"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/bright_white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <EditText
+                    android:id="@+id/et_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:backgroundTint="@color/light_blue"
+                    android:gravity="start"
+                    android:hint="Please explain your problem in brief..."
+                    android:paddingBottom="20dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_attach"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/attachm"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/vieww"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp">
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Create Ticket"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/light_blue">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_registerTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp">
+
+            <TextView
+                android:id="@+id/titlename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Create Ticket"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

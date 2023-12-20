@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_dropdown"
+        android:title="Dropdown"
+        android:icon="@drawable/baseline_arrow_drop_down_24"
+        app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/group_dropdown">
+                <item
+                    android:id="@+id/item_1"
+                    android:title="Open" />
+                <item
+                    android:id="@+id/item_2"
+                    android:title="Closed" />
+                <item
+                    android:id="@+id/item_3"
+                    android:title="Unattended" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/search"
+        android:title="Dropdown"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always">
+
+    </item>
+</menu>

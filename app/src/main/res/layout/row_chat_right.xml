@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msglayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp">
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="top|center">
+
+       <!-- <TextView
+            android:id="@+id/chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/leftmsgshape"
+            android:backgroundTint="#ECEFF3"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="Today"
+            android:textColor="@color/black"
+            android:textSize="12sp" />-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rl_date"
+        android:background="@drawable/rightmsgshape"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmsgshape"
+
+            >
+            <RelativeLayout
+                android:id="@+id/right_img2"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:gravity="center"
+                android:background="@drawable/image_shape"
+
+                >
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <VideoView
+                        android:id="@+id/rightChatVideoView"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" ></VideoView>
+
+                    <ImageView
+                        android:id="@+id/rightChatPlayButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/play_button" />
+                </FrameLayout>
+
+
+                <ImageView
+                    android:id="@+id/images"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right_img2"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp">
+            <TextView
+                android:id="@+id/tv_rightMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="20"
+                android:minWidth="100dp"
+                android:text="His Message"
+                android:textColor="@color/bright_white"
+                android:textSize="14sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_alignEnd="@+id/img"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timetv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="06:19 PM "
+                android:textColor="@color/bright_white"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/isSeen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/check"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/leftmsgshape"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/leftmsgshape"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/left_img2"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:gravity="center"
+                android:background="@drawable/image_shape"
+
+                >
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <VideoView
+                        android:id="@+id/leftChatVideoView"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" ></VideoView>
+
+                    <ImageView
+                        android:id="@+id/leftChatPlayButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/play_button" />
+                </FrameLayout>
+
+
+            <ImageView
+                    android:id="@+id/left_images"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/left_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_img2"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/tv_left_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_img2"
+                android:maxLines="20"
+                android:minWidth="100dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:text="His Message"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_img"
+            android:layout_alignEnd="@+id/left_img"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/left_timetv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="06:19 PM "
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/left_isSeen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/check"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

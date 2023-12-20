@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585663003595",
+    "project_id": "supportticket-868f6",
+    "storage_bucket": "supportticket-868f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585663003595:android:3925104a51a766fff3144e",
+        "android_client_info": {
+          "package_name": "com.impulse.supportticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvkxFBGHobU6L1VIRROWhvGua1Min4xEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
