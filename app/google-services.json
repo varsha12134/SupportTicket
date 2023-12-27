@@ -1,26 +1,44 @@
 {
   "project_info": {
-    "project_number": "585663003595",
-    "project_id": "supportticket-868f6",
-    "storage_bucket": "supportticket-868f6.appspot.com"
+    "project_number": "483333942464",
+    "project_id": "ticket-59005",
+    "storage_bucket": "ticket-59005.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:585663003595:android:3925104a51a766fff3144e",
+        "mobilesdk_app_id": "1:483333942464:android:8ba3e3c43f38816a6cd125",
         "android_client_info": {
-          "package_name": "com.impulse.supportticket"
+          "package_name": "com.technotoil.supportticket"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "483333942464-3ks4p4s7lsiu27epd4dhk6ftv2ilo14i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technotoil.supportticket",
+            "certificate_hash": "71ac95c789b7e2eead58e137a1e749681dda489b"
+          }
+        },
+        {
+          "client_id": "483333942464-2bm8bndbe5dhka686868tam2fqemg52l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDvkxFBGHobU6L1VIRROWhvGua1Min4xEA"
+          "current_key": "AIzaSyBXMOz5vyTk3p3EqzFwXwt7_LpxaAm0aOI"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483333942464-2bm8bndbe5dhka686868tam2fqemg52l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
